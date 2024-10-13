@@ -1,0 +1,17 @@
+Index: app/src/main/java/com/example/weatherly/widgets/WeatherlyTopBar.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.weatherly.widgets\r\n\r\nimport androidx.compose.foundation.layout.fillMaxSize\r\nimport androidx.compose.foundation.layout.fillMaxWidth\r\nimport androidx.compose.material3.ExperimentalMaterial3Api\r\nimport androidx.compose.material3.Text\r\nimport androidx.compose.material3.TopAppBar\r\nimport androidx.compose.material3.TopAppBarDefaults\r\nimport androidx.compose.runtime.Composable\r\nimport androidx.compose.ui.Modifier\r\nimport androidx.compose.ui.graphics.Color\r\nimport androidx.compose.ui.graphics.vector.ImageVector\r\nimport androidx.compose.ui.text.TextStyle\r\nimport androidx.compose.ui.text.font.FontWeight\r\nimport androidx.compose.ui.text.style.TextAlign\r\nimport androidx.compose.ui.unit.Dp\r\nimport androidx.compose.ui.unit.sp\r\nimport androidx.navigation.NavController\r\n\r\n@OptIn(ExperimentalMaterial3Api::class)\r\n@Composable\r\nfun WeatherlyTopBar (\r\n    title: String,\r\n    elevation: Dp,\r\n    icon: ImageVector? = null,\r\n    isMainScreen: Boolean,\r\n    navController: NavController,\r\n    onAddActionButtonClicked: () -> Unit,\r\n    onButtonClicked: () -> Unit\r\n) {\r\n    TopAppBar(\r\n        title = {\r\n        Text(\r\n            text = title,\r\n            color = Color.White,\r\n            style = TextStyle(\r\n                fontWeight = FontWeight.Bold,\r\n                fontSize = 20.sp\r\n            ),\r\n            textAlign = TextAlign.Center,\r\n            modifier = Modifier\r\n                .fillMaxWidth()\r\n        )\r\n    },\r\n        colors = TopAppBarDefaults.topAppBarColors(\r\n            containerColor = Color.Blue\r\n        ),\r\n        modifier = Modifier\r\n            .fillMaxWidth()\r\n\r\n    )\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/weatherly/widgets/WeatherlyTopBar.kt b/app/src/main/java/com/example/weatherly/widgets/WeatherlyTopBar.kt
+--- a/app/src/main/java/com/example/weatherly/widgets/WeatherlyTopBar.kt	(revision 2986383190c5fde62c43fc55affa6189fbb641cf)
++++ b/app/src/main/java/com/example/weatherly/widgets/WeatherlyTopBar.kt	(date 1727843656594)
+@@ -1,6 +1,5 @@
+ package com.example.weatherly.widgets
+ 
+-import androidx.compose.foundation.layout.fillMaxSize
+ import androidx.compose.foundation.layout.fillMaxWidth
+ import androidx.compose.material3.ExperimentalMaterial3Api
+ import androidx.compose.material3.Text

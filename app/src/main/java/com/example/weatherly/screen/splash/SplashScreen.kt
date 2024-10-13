@@ -40,6 +40,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun SplashScreen (navController: NavController = rememberNavController()) {
 
+    val defaultCity = "Shillong"
     val gradientOne = Brush.linearGradient(listOf(
         Color(108,107,251),
         Color(226,115,150)
@@ -55,7 +56,7 @@ fun SplashScreen (navController: NavController = rememberNavController()) {
 
     LaunchedEffect(key1 = true) {
         delay(2000L)
-        navController.navigate(WeatherlyScreens.MainScreen.name)
+        navController.navigate(WeatherlyScreens.MainScreen.name+"/$defaultCity/celsius")
     }
     AnimatedVisibility(
         visible = visible,
