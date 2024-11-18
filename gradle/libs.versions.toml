@@ -1,27 +1,28 @@
 [versions]
-agp = "8.5.2"
+agp = "8.7.2"
 coilCompose = "2.7.0"
 converterScalars = "2.9.0"
-hiltAndroidCompiler = "2.51.1"
-kotlin = "1.9.0"
-coreKtx = "1.13.1"
+hiltAndroidCompiler = "2.52"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-kotlinxCoroutinesAndroid = "1.7.3"
-kotlinxCoroutinesCore = "1.7.3"
-kotlinxCoroutinesPlayServices = "1.7.3"
-lifecycleRuntimeKtx = "2.8.5"
-activityCompose = "1.9.2"
-composeBom = "2024.04.01"
-lifecycleRuntimeKtxVersion = "2.4.0"
-navigationCompose = "2.8.0"
+kotlinxCoroutinesAndroid = "1.9.0"
+kotlinxCoroutinesCore = "1.9.0"
+kotlinxCoroutinesPlayServices = "1.9.0"
+lifecycleRuntimeKtx = "2.8.7"
+activityCompose = "1.9.3"
+composeBom = "2024.11.00"
+lifecycleRuntimeKtxVersion = "2.8.7"
+navigationCompose = "2.8.4"
 retrofit = "2.9.0"
 roomRuntime = "2.6.1"
-uiTextGoogleFonts = "1.7.0"
+uiTextGoogleFonts = "1.7.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+#noinspection SimilarGradleDependency
 androidx-lifecycle-runtime-ktx-v240 = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
@@ -42,6 +43,7 @@ hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", ve
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+#noinspection SimilarGradleDependency
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -60,4 +62,5 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
