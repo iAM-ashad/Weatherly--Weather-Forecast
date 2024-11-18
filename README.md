@@ -8,16 +8,20 @@ Weatherly is a sleek and intuitive Android weather forecast application that del
 4. Interactive UI: Minimalist and user-friendly design with animations.
 5. Favorites: Add cities to favorites for easy browsing.
 6. Switch between Celsius and Fahrenheit!
+
 🛠️ Tech Stack: 
+
 Languages & Frameworks
 1. Kotlin: For modern Android app development.
 2. Coroutines: For asynchronous programming.
+
 Libraries & Tools:
 1. Retrofit: RESTful API integration and data fetching.
 2. Gson: JSON parsing for API responses.
 3. ViewModel & LiveData: For lifecycle-aware UI updates.
 4. Navigation Component: For seamless navigation between screens.
 5. Material Design Components: For consistent UI/UX.
+
 APIs:
 1. OpenWeather API: To fetch weather data.
 
